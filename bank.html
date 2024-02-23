@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Bank</title>
+    <!-- tailwind link -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header>
-        <h1>Simple Bank transaction page</h1>
+        <h1 class="text-5xl font-bold text-center mt-16"> <span class="text-lime-900">Simple Bank</span> transaction
+            page</h1>
     </header>
+
+    <main>
+        <section class="mt-8">
+            <div class="text-3xl grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-cyan-500 rounded text-white text-center  p-8">
+                    <h4>Deposit</h4>
+                    <h3 class="text-5xl">$ <span>00</span></h3>
+                </div>
+                <div class="bg-red-500 rounded text-white text-center p-8">
+                    <h4>Withdraw</h4>
+                    <h3 class="text-5xl">$ <span>00</span></h3>
+                </div>
+                <div class="bg-green-900 rounded text-white text-center p-8">
+                    <h4>Balance</h4>
+                    <h3 class="text-5xl">$ <span>1200</span></h3>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-8 mt-16 w-3/4 mx-auto p-2">
+                <div class=" bg-red-200 p-8 rounded ">
+                    <h4>Please Deposite Your Money</h4>
+                    <input class="px-2 p-1 rounded border-2 border-slate-400 " type="text" placeholder="Amount">
+                    <button class="block mt-2 rounded bg-green-900 px-4 p-1 text-white">Deposit</button>
+                </div>
+                <div class=" bg-red-200 p-8 rounded ">
+                    <h4>Please Withdraw Your Money</h4>
+                    <input class="px-2 p-1 rounded border-2 border-slate-400 " type="text" placeholder="Amount">
+                    <button class="block mt-2 rounded bg-red-800 px-4 p-1 text-white">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
