@@ -6,5 +6,4 @@ document.getElementById('login').addEventListener('click', function () {
     if (emailid == 'simple@gmail.de' && password == 1234) {
         window.location.href = 'bank.html';
     }
-
 })
